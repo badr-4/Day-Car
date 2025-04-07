@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY CAR - Premium Car Rentals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>DAY <span>CAR</span></h1>
+                <p>Drive Your Dream</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Premium Car Rentals</h2>
+                <p>Experience luxury and comfort with our wide selection of vehicles</p>
+                <a href="#reservation" class="btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="fleet" id="fleet">
+        <div class="container">
+            <h2 class="section-title">Our Fleet</h2>
+            <p class="section-subtitle">Choose from our premium selection of vehicles</p>
+            
+            <div class="fleet-grid">
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d" alt="Economy Car">
+                    <h3>Economy Class</h3>
+                    <p>Perfect for city driving and short trips</p>
+                    <div class="car-features">
+                        <span><i class="fas fa-user"></i> 4</span>
+                        <span><i class="fas fa-suitcase"></i> 2</span>
+                        <span><i class="fas fa-gas-pump"></i> 5.2L/100km</span>
+                    </div>
+                    <p class="price">From $35/day</p>
+                </div>
+                
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt="SUV">
+                    <h3>SUV</h3>
+                    <p>Spacious and comfortable for family trips</p>
+                    <div class="car-features">
+                        <span><i class="fas fa-user"></i> 5</span>
+                        <span><i class="fas fa-suitcase"></i> 4</span>
+                        <span><i class="fas fa-gas-pump"></i> 7.8L/100km</span>
+                    </div>
+                    <p class="price">From $65/day</p>
+                </div>
+                
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e" alt="Luxury Car">
+                    <h3>Luxury Class</h3>
+                    <p>Premium vehicles for special occasions</p>
+                    <div class="car-features">
+                        <span><i class="fas fa-user"></i> 4</span>
+                        <span><i class="fas fa-suitcase"></i> 3</span>
+                        <span><i class="fas fa-gas-pump"></i> 8.5L/100km</span>
+                    </div>
+                    <p class="price">From $120/day</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">What we offer to our customers</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Wide Selection</h3>
+                    <p>Choose from various vehicle types to suit your needs</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is always ready to assist you</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Multiple Locations</h3>
+                    <p>Pick up and drop off at various convenient locations</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Full Insurance</h3>
+                    <p>Comprehensive coverage for peace of mind</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <p class="section-subtitle">Book your perfect car in just a few steps</p>
+            
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="pickup-location">Pick-up Location</label>
+                    <select id="pickup-location" required>
+                        <option value="">Select location</option>
+                        <option value="downtown">Downtown Office</option>
+                        <option value="airport">Airport Terminal</option>
+                        <option value="north">North Station</option>
+                        <option value="south">South Plaza</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dropoff-location">Drop-off Location</label>
+                    <select id="dropoff-location" required>
+                        <option value="">Select location</option>
+                        <option value="downtown">Downtown Office</option>
+                        <option value="airport">Airport Terminal</option>
+                        <option value="north">North Station</option>
+                        <option value="south">South Plaza</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup-date">Pick-up Date</label>
+                        <input type="date" id="pickup-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pickup-time">Pick-up Time</label>
+                        <input type="time" id="pickup-time" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dropoff-date">Drop-off Date</label>
+                        <input type="date" id="dropoff-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dropoff-time">Drop-off Time</label>
+                        <input type="time" id="dropoff-time" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="car-type">Car Type</label>
+                    <select id="car-type" required>
+                        <option value="">Select car type</option>
+                        <option value="economy">Economy</option>
+                        <option value="suv">SUV</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="minivan">Minivan</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn">Check Availability</button>
+            </form>
+            
+            <div id="availability-results" class="availability-results">
+                <!-- Results will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Hear from people who have used our services</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"DAY CAR provided excellent service. The car was clean, well-maintained, and the pickup process was smooth. Will definitely use them again!"</p>
+                    <div class="customer">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D.">
+                        <div>
+                            <h4>John D.</h4>
+                            <p>Business Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"I rented a luxury car for my anniversary and it was perfect. The staff went above and beyond to make our special day memorable."</p>
+                    <div class="customer">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M.">
+                        <div>
+                            <h4>Sarah M.</h4>
+                            <p>Happy Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"The SUV I rented was perfect for our family vacation. Plenty of space and great fuel efficiency. Highly recommend DAY CAR!"</p>
+                    <div class="customer">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael T.">
+                        <div>
+                            <h4>Michael T.</h4>
+                            <p>Family Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with our team</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Our Locations</h3>
+                    
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>63 Bd d'Anfa, Casablanca 202503<br>Open: 24/7</p>
+                    </div>
+                    
+                    <h3>Contact Details</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>0661976296</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@daycar.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>About DAY CAR</h3>
+                    <p>Providing premium car rental services since 2010. Our mission is to offer the best vehicles with exceptional customer service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and updates</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DAY CAR. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
